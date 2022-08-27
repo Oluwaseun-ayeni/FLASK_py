@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$USER_HOME$/PycharmProjects/.idea/PycharmProjects.iml" filepath="$USER_HOME$/PycharmProjects/.idea/PycharmProjects.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/flaskstore.iml" filepath="$PROJECT_DIR$/.idea/flaskstore.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../fyurr/.idea/fyurr.iml" filepath="$PROJECT_DIR$/../fyurr/.idea/fyurr.iml" />
     </modules>
   </component>
 </project>

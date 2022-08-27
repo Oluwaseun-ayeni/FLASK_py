@@ -4,12 +4,19 @@ Register Page
 {% endblock %}
 
 {% block content %}
+
 <body class="text-center">
+    
     <div class="container">
     <form method="POST" class="form-register" style="color:aliceblue">
         {{ form.hidden_tag() }}
         <img class="mb-4" src="https://picsvg.com/svg/DGfniK.jpg" alt="Store"/>
-        <h1 class="h3 mb-3 font-weight-normal"> 
+        
+        <h1 class="h3 mb-3 font-weight-normal" style="color: whitesmoke;"> 
+            <p class= "font-family-Verdana, Tahoma font-weight-medium "style="color: skyblue;">
+                Welcome!
+            </p>
+            
             Please Create an Account
         </h1>
         <br>
@@ -17,13 +24,23 @@ Register Page
         {{ form.username(class="form-control" , placeholder="Username") }}
         {{ form.email_address.label() }}
         {{ form.email_address(class="form-control" , placeholder="Email address") }}
-        {{ form.password2.label() }}
-        {{ form.password2(class="form-control" , placeholder="Re-enter password") }}
         {{ form.password1.label() }}
         {{ form.password1(class="form-control" , placeholder="Password") }}
+        {{ form.password2.label() }}
+        {{ form.password2(class="form-control" , placeholder="Re-enter password") }}
+        
         <br>
-        {{ form.submit(class="btn btn-lg btn-block btn-primary") }}
+
+        <div class="checkbox mb-4">
+            <h6>Already a user?</h6>
+            <a class="btn btn-sm btn-primary" href="{{ url_for('login_page') }}"></a>
+         </div>
+        {{ form.submit(class="btn btn-lg btn-block btn-success") }}
     </form>
     </div> 
+
 </body> 
 {% endblock %}
+
+<!-- https://cdn-icons-png.flaticon.com/512/4807/4807735.png -->
+<!-- https://cdn-icons-png.flaticon.com/512/3720/3720658.png -->
